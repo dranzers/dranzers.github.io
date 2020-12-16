@@ -47,17 +47,32 @@
                     <article>
                         <h3>Conflict pada Git</h3>
                         <hr>
+                        <h5>Penyebab terjadinya Conflict?</h5>
                         <p style="text-align: justify;">
+                            Proses dimana pada 1 dokumen terjadi bentrokan perubahan file tersebut disebabkan karena mengubah file yang sama.
                             
+                            Disimulasikan programmer A dan B mengubah file yang sama misal file home.html, saat ketika programmer A telah selesai dan melakukan push file ke server maka 
+                            ketika programmer B pull source code maka terjadilah conflict
+                            <br /><br />
+                        </p>
 
-                            <br /> 
-                            Sekian dulu ya teman-teman masih luas lagi tentang <b>Github</b> dan <b>Git</b> ini. Saya juga masih belajar soalnya. Terimakasih
-                            
-
-                            <br />  
+                        <h5>Bagaimana menghindari Conflict?</h5>
+                        <p style="text-align: justify;">
+                            Menghindari bisa dengan janjian dulu secara manual bahwa bila sedang dikerjakan oleh programmer A maka programmer B tidak boleh melakukan perubahan file tersebut
+                            sampai programmer A melakukan push file tersebut. Cara kedua bisa menggunakan git stash lalu git pop.
+                            <br /><br />
+                        </p>
+                        
+                        <h5>Apa yang harus dilakukan apabila terjadi Conflict?</h5>
+                        <p style="text-align: justify;">
+                            Teman-teman dapat mimilih 3 opsi, yaitu: 1. memakai perubahan file yang sekarang yang ada di server dan menghapus perubahan file yang telah kita lakukan ini biasanya ada tanda (HEAD)/Accept Current Change,
+                            2. kebalikannya dari nomor 1/Accept Incoming Change, 3. menggunakan keduanya/Accept Both Change
+                            <br />
+                            <br />
+                            <img src="images/gitconflict.png"  class="img-thumbnail"  alt="photo">
+                            <br />
                             <br /> 
                             <span class="fw-bolder">Banyuwangi, 16 Desember 2020</span><br />  
-                            <span class="fw-light">Referensi: Refactory Course Git dan Github, Git SCM.</span>
                         </p>
                     </article>
                 </div>
@@ -68,6 +83,5 @@
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
->>>>>>> conflict
 </body>
 </html>
