@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>My Github IO</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="fonts/style.css" rel="stylesheet" />
@@ -26,19 +27,11 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item" href="githubdangit.html">Git dan Github</a></li>
-                                <li><a class="dropdown-item" href="conflict.html">Conflict pada Git</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Javascript
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="concatarray.html">Concat Array denga Destructuring</a></li>
+                                <li><a class="dropdown-item active" href="#">Conflict pada Git</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">About</a>
+                            <a class="nav-link" aria-current="page" href="index.html">About</a>
                         </li>
                     </ul>
                 </div>
@@ -52,16 +45,32 @@
             <div class="row mt-5">
                 <div class="col-12 col-md-6">
                     <article>
-                        <h3>Hello</h3>
+                        <h3>Concat Array dengan destructuring</h3>
                         <hr>
+                        <h5>Apa yang harus dilakukan apabila terjadi Conflict?</h5>
                         <p style="text-align: justify;">
-                            Perkenalkan nama saya Rahmad Santosa, biasanya dipanggil Rahmad. Saya mencoba membuat page git io ini 
-                            karena adanya event Refactory Talent yang diadakan oleh Refactory Course. Refactory Course sangat membantu saya 
-                            dalam mengupdate informasi tentang dunia programming, kemudian tools yang dipakai dan basic-basic pemrograman.
-                            Saat ini saya sedang belajar javascript basic. Terimakasih.
-                            <br />  
-                            <br />  
-                            <span class="fw-bolder">Banyuwangi, 16 Desember 2020</span>  
+                            Hi teman-teman kali saya coba share tentan concat array di javascript dengan destructuring. Nah kebetulan saya 
+                            perlu melakukan hal ini untuk kebutuhan pengambilan data berkala, ok langsung saja:
+                            <br />
+                            <pre class="bg-light">
+                                
+    let json1 = [{nama : 'rahmad'}, {nama: 'budi'}];
+    let json2 = [{nama : 'yudha'}, {nama: 'ziqqi'}];
+
+    let merge = [...json1, ...json2];
+    console.log(merge);
+                            </pre>
+                            Jadi nantinya jadinya akan seperti ini:
+                            <br />
+                            <br />
+                            <pre class="bg-light">
+                                
+    [{nama: "rahmad"},{nama: "budi"},{nama: "yudha"},{nama: "ziqqi"}]
+                            </pre>
+                            Nah sekian dulu sharing dari saya, jika kekurangan atau kritik kalian bisa beri masukan ke saya. Terimakasih dan semoga bermanfaat.
+                            <br /> 
+                            <br /> 
+                            <span class="fw-bolder">Banyuwangi, 17 Desember 2020</span><br />  
                         </p>
                     </article>
                 </div>
@@ -74,3 +83,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>
+
